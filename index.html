@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sander Vinterhus – Portefølje</title>
+  <meta name="description" content="Portefølje for Sander Vinterhus – multimedieteknologi, design og utvikling." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Hopp til innhold</a>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Hovedmeny">
+      <a class="brand" href="#top" aria-label="Gå til toppen">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Sander Vinterhus</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navLinks">
+        <span class="sr-only">Åpne/lukk meny</span>
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <div id="navLinks" class="nav-links">
+        <a href="#prosjekter">Prosjekter</a>
+        <a href="#galleri">Galleri</a>
+        <a href="#kompetanse">Kompetanse</a>
+        <a href="#om">Om meg</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="top" class="hero hero-has-bg">
+      <div class="hero-bg" role="img" aria-label="Forsidebilde"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="kicker">Multimedieteknologi • Design • Utvikling</p>
+          <h1>Hei! Mitt navn er Sander Vinterhus og jeg ønsker deg velkommen til min portefølje.</h1>
+          <p class="lead">
+            Student ved Universitetet i Agder (Multimedieteknologi og design). Jobber med web, identitet, foto/video og 3D.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#prosjekter">Se prosjekter</a>
+            <a class="btn" href="#kontakt">Kontakt</a>
+            <!-- OBS: Endre filnavn her hvis CV-en din ikke heter nøyaktig dette -->
+            <a class="btn ghost" href="assets/CV_Sander_Vinterhus_2026_nettside.pdf" target="_blank" rel="noopener">Last ned CV</a>
+        </div>
+
+          <div class="hero-meta">
+            <a class="chip" href="mailto:sandervinterhus@hotmail.no">sandervinterhus@hotmail.no</a>
+            <span class="chip">Kristiansand / Grimstad</span>
+            <a class="chip" href="https://www.linkedin.com/in/vinterhussander/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="chip" href="https://github.com/VinterhusSander" target="_blank" rel="noopener">GitHub</a>
+
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Høydepunkter">
+          <div class="stat">
+            <div class="stat-num">3</div>
+            <div class="stat-label">år med studiefokus på digitale medier</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2</div>
+            <div class="stat-label">større kundeprosjekter (IKT + bachelor)</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Fullstack-ish</div>
+            <div class="stat-label">design + implementasjon (HTML/CSS/JS)</div>
+          </div>
+
+          <div class="mini">
+            <p class="mini-title">Hva jeg søker</p>
+            <p class="mini-text">
+              Roller innen innholdsproduksjon, SoMe, digital markedsføring, webdesign/utvikling – gjerne der jeg kan ta eierskap til struktur og kvalitet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="prosjekter" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Prosjekter</h2>
+          <p>Utvalgte arbeider. Klikk for å se detaljer, prosess og hva jeg bidro med.</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Filtrer prosjekter">
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true">Alle</button>
+          <button class="filter" data-filter="web" role="tab" aria-selected="false">Web</button>
+          <button class="filter" data-filter="brand" role="tab" aria-selected="false">Profil</button>
+          <button class="filter" data-filter="media" role="tab" aria-selected="false">Foto/Video</button>
+          <button class="filter" data-filter="3d" role="tab" aria-selected="false">3D</button>
+        </div>
+
+        <div class="grid" id="projectGrid">
+          <article class="card" data-tags="web brand" tabindex="0"
+                   data-title="Bachelor – Jobbguru"
+                   data-subtitle="Digital identitet + nettside + SEO + booking"
+                   data-role="Design og utvikling (fra bunnen av)"
+                   data-tech="HTML, CSS, JavaScript • SEO • Logo/Profil"
+                   data-desc="Utviklet helhetlig digital identitet og nettside for privat oppdragsgiver. Fokus på et profesjonelt, trygt og omsorgsfullt uttrykk, med timebooking, innhold og kontaktløsninger."
+                   data-bullets="Helhetlig visuell profil|Nettside utviklet fra bunnen av|Timebooking (kalender) og kontaktflyt|Systematisk SEO-arbeid"
+                   data-links='[{"label":"Se live (kommer)","url":"#"},{"label":"GitHub (kommer)","url":"#"}]'>
+            <div class="card-top">
+              <div class="badge">Hovedcase</div>
+              <h3>Bachelor – Jobbguru (pågår)</h3>
+              <p class="muted">Digital identitet, nettside, SEO og booking</p>
+            </div>
+            <div class="card-bottom">
+              <span class="pill">Web</span>
+              <span class="pill">Profil</span>
+              <span class="pill">SEO</span>
+            </div>
+          </article>
+
+          <article class="card" data-tags="web media" tabindex="0"
+                   data-title="IKT-prosjekt – Arendal Buldresenter"
+                   data-subtitle="Nettsidedesign + foto + instruksjonsvideo"
+                   data-role="Design, foto og video (i team)"
+                   data-tech="Figma • Lightroom • Premiere Pro"
+                   data-desc="Utviklet nettsidedesign, produserte profesjonelle bilder og laget instruksjonsvideo for nytt selvbetjent buldresenter. Iterativ prosess og samarbeid med webutvikler."
+                   data-bullets="Analyse av eksisterende løsninger|Iterativ designprosess|Foto- og videoproduksjon|Samarbeid med utvikler"
+                   data-links='[{"label":"Trykk for å se nettsiden!","url":"https://arendalbuldring.no"}]'>
+            <div class="card-top">
+              <div class="badge">Kundeprosjekt</div>
+              <h3>IKT – Arendal Buldresenter</h3>
+              <p class="muted">Nettsidedesign + foto + video</p>
+            </div>
+            <div class="card-bottom">
+              <span class="pill">Web</span>
+              <span class="pill">Foto/Video</span>
+            </div>
+          </article>
+
+          <article class="card" data-tags="3d web" tabindex="0"
+                   data-title="Interaktiv 3D (Blender + Three.js)"
+                   data-subtitle="3D-modellering og interaktiv webvisning"
+                   data-role="Modellering, optimalisering og implementasjon"
+                   data-tech="Blender • Three.js • JavaScript"
+                   data-desc="Eksperimenter med 3D på web: modellering i Blender og integrasjon i Three.js, med fokus på struktur, ytelse og interaktivitet."
+                   data-bullets="3D-modellering og UV|Optimalisering for web|Three.js-scene, lys og kamera|Enkle interaksjoner/anim"
+                   data-links='[{"label":"Demo (kommer)","url":"#"}]'>
+            <div class="card-top">
+              <div class="badge">Teknisk</div>
+              <h3>Interaktiv 3D</h3>
+              <p class="muted">Blender + Three.js</p>
+            </div>
+            <div class="card-bottom">
+              <span class="pill">3D</span>
+              <span class="pill">Web</span>
+            </div>
+          </article>
+
+          <article class="card" data-tags="media" tabindex="0"
+                   data-title="Video og klipp (Premiere Pro)"
+                   data-subtitle="Klippeflyt, lyd, tempo og historiefortelling"
+                   data-role="Redigering og postproduksjon"
+                   data-tech="Premiere Pro • Audition"
+                   data-desc="Utvalg av videoklipp med fokus på rytme, lydarbeid og tydelige budskap. Kan brukes til SoMe, instruksjon eller promotering."
+                   data-bullets="Klippe- og historieflyt|Lydforbedring|Teksting for SoMe|Eksport for ulike flater"
+                   data-links='[{"label":"portrettintervju (se i galleri)","url":"#"}]'>
+            <div class="card-top">
+              <div class="badge">Innhold</div>
+              <h3>Video / Post</h3>
+              <p class="muted">Redigering, lyd og tempo</p>
+            </div>
+            <div class="card-bottom">
+              <span class="pill">Foto/Video</span>
+              <span class="pill">SoMe</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="galleri" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Galleri</h2>
+          <p>Noen bilder jeg har knipset</p>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid"></div>
+
+        <div class="video-block">
+          <h3>Portrettintervju</h3>
+          <p class="muted">Intervju laget i videofaget.</p>
+          <video class="video-player" controls preload="metadata">
+            <source src="assets/Intervju_Ferdig.mp4" type="video/mp4" />
+            Nettleseren din støtter ikke video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="kompetanse" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Kompetanse</h2>
+          <p>En kombinasjon av kreativ produksjon og teknisk gjennomføring.</p>
+        </div>
+
+        <div class="cols">
+          <div class="panel">
+            <h3>Verktøy</h3>
+            <ul class="list">
+              <li>Adobe: Premiere Pro, Photoshop, Illustrator, Lightroom, Audition</li>
+              <li>Blender (3D-modellering og animasjon)</li>
+              <li>JavaScript og Three.js</li>
+              <li>HTML, CSS, VS Code</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Arbeidsmåte</h3>
+            <ul class="list">
+              <li>Strukturert, løsningsorientert og tydelig på leveranser</li>
+              <li>Iterasjon og forbedring basert på innsikt</li>
+              <li>God på effektivisering og planlegging</li>
+              <li>Komfortabel i samarbeid og høyt tempo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="om" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Om meg</h2>
+          <p>Kort bakgrunn og hva jeg liker å jobbe med.</p>
+        </div>
+
+        <div class="about">
+          <div class="about-card about-profile">
+            <img class="profile-img profile-click"
+                src="assets/Profilbilde.jpg"
+                alt="Profilbilde av Sander Vinterhus"
+                loading="lazy"
+                role="button"
+                tabindex="0"
+                aria-label="Åpne profilbilde i full størrelse" />
+
+            <div>
+              <p>
+                Jeg er student ved Universitetet i Agder og tar en bachelor i Multimedieteknologi og design.
+                Jeg er foreløpig på siste semester og på utkikk etter jobb. Jeg liker å kombinere design og teknisk implementasjon – spesielt web, identitet og innholdsproduksjon.
+              </p>
+              <p>
+                I prosjekter trives jeg med å ta eierskap til struktur og kvalitet: planlegge, produsere, teste og levere.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <h3>Erfaring jeg tar med meg</h3>
+            <ul class="list">
+              <li>Kundeprosjekter: prosess fra idé til ferdig leveranse</li>
+              <li>Logistikk/effektivisering (Ryde/Voi): struktur og tempo</li>
+              <li>Service og stressmestring (butikk/event): kommunikasjon og ansvar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="kontakt" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Kontakt</h2>
+          <p>Ta kontakt for jobb, samarbeid eller en prat.</p>
+        </div>
+
+        <div class="contact">
+          <div class="panel">
+            <h3>Send meg en melding</h3>
+            <form id="contactForm" class="form">
+              <label>
+                Navn
+                <input name="name" type="text" placeholder="Ditt navn" required />
+              </label>
+              <label>
+                E-post
+                <input name="email" type="email" placeholder="din@epost.no" required />
+              </label>
+              <label>
+                Melding
+                <textarea name="message" rows="5" placeholder="Hva kan jeg hjelpe med?" required></textarea>
+              </label>
+              <button class="btn primary" type="submit">Kopier e-postutkast</button>
+              <p class="muted small" id="formHint">Skjemaet sender ikke noe automatisk – det lager et e-postutkast du kan lime inn.</p>
+            </form>
+          </div>
+
+          <div class="panel">
+            <h3>Direkte</h3>
+            <p class="muted">Raskeste måten å nå meg på:</p>
+            <div class="stack">
+              <a class="btn" href="mailto:sandervinterhus@hotmail.no">sandervinterhus@hotmail.no</a>
+              <a class="btn" href="tel:+4790470037">+47 904 70 037</a>
+              <a class="btn ghost" href="https://www.linkedin.com/in/vinterhussander/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn ghost" href="https://github.com/VinterhusSander" target="_blank" rel="noopener">GitHub</a>
+
+            </div>
+
+            <div class="divider"></div>
+
+            <p class="muted small">
+              Ser frem til å høre fra deg!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-row">
+      <p class="muted">© <span id="year"></span> Sander Vinterhus</p>
+      <a class="muted" href="#top">Til toppen ↑</a>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <dialog class="modal" id="projectModal" aria-label="Prosjektdetaljer">
+    <div class="modal-inner">
+      <button class="modal-close" id="modalClose" aria-label="Lukk">✕</button>
+
+      <div class="modal-head">
+        <p class="kicker" id="mSubtitle"></p>
+        <h3 id="mTitle"></h3>
+        <p class="muted" id="mDesc"></p>
+      </div>
+
+      <div class="modal-grid">
+        <div class="modal-block">
+          <h4>Min rolle</h4>
+          <p id="mRole" class="muted"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Teknologi / verktøy</h4>
+          <p id="mTech" class="muted"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Bidrag</h4>
+          <ul id="mBullets" class="list"></ul>
+        </div>
+        <div class="modal-block">
+          <h4>Lenker</h4>
+          <div id="mLinks" class="stack"></div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- LIGHTBOX -->
+  <dialog class="lightbox" id="lightbox" aria-label="Bildevisning">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Lukk">✕</button>
+    <img id="lightboxImg" alt="" />
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

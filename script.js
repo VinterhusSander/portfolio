@@ -168,12 +168,13 @@ const galleryFiles = [
   "IMG_5630-2.jpg",
   "IMG_3643.jpg",
   "IMG_3363.jpg",
-  "_MG_9199.jpg",
-  "_MG_9203.jpg",
-  "_MG_9234.jpg",
-  "_MG_9264.jpg",
-  "_MG_9362.jpg",
-  "_MG_9488.jpg",
+  "mg_9199.jpg",
+  "mg_9203.jpg",
+  "mg_9234.jpg",
+  "mg_9264.jpg",
+  "mg_9362.jpg",
+  "mg_9488.jpg",
+  
 ];
 
 const galleryGrid = document.getElementById("galleryGrid");

@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sander Vinterhus – Portefølje</title>
   <meta name="description" content="Portefølje for Sander Vinterhus – multimedieteknologi, design og utvikling." />
+  <link rel="preload" as="image" href="assets/optimized/hero-IMG_3229.jpg" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -14,8 +18,8 @@
   <header class="header">
     <nav class="nav container" aria-label="Hovedmeny">
       <a class="brand" href="#top" aria-label="Gå til toppen">
-        <span class="brand-dot" aria-hidden="true"></span>
-        <span>Sander Vinterhus</span>
+        <span class="brand-first">Sander</span>
+        <span class="brand-last">Vinterhus</span>
       </a>
 
       <button class="nav-toggle" aria-expanded="false" aria-controls="navLinks">
@@ -42,48 +46,27 @@
       <div class="container hero-grid">
         <div class="hero-text">
           <p class="kicker">Multimedieteknologi • Design • Utvikling</p>
-          <h1>Hei! Mitt navn er Sander Vinterhus og jeg ønsker deg velkommen til min portefølje.</h1>
+          <h1>Velkommen til min portefølje</h1>
           <p class="lead">
-            Student ved Universitetet i Agder (Multimedieteknologi og design). Jobber med web, identitet, foto/video og 3D.
+            Bachelor i multimedieteknologi og design fra Universitetet i Agder. Jobber med web, visuell identitet, foto/video og 3D.
           </p>
 
           <div class="hero-cta">
             <a class="btn primary" href="#prosjekter">Se prosjekter</a>
             <a class="btn" href="#kontakt">Kontakt</a>
             <!-- OBS: Endre filnavn her hvis CV-en din ikke heter nøyaktig dette -->
-            <a class="btn ghost" href="assets/CV_Sander_Vinterhus_2026_nettside.pdf" target="_blank" rel="noopener">Last ned CV</a>
+            <a class="btn ghost" href="assets/CV_Sander_Vinterhus_2026.pdf" target="_blank" rel="noopener">Last ned CV</a>
         </div>
 
           <div class="hero-meta">
             <a class="chip" href="mailto:sandervinterhus@hotmail.no">sandervinterhus@hotmail.no</a>
-            <span class="chip">Kristiansand / Grimstad</span>
+            <span class="chip">Kristiansand</span>
             <a class="chip" href="https://www.linkedin.com/in/vinterhussander/" target="_blank" rel="noopener">LinkedIn</a>
             <a class="chip" href="https://github.com/VinterhusSander" target="_blank" rel="noopener">GitHub</a>
 
           </div>
         </div>
 
-        <div class="hero-card" aria-label="Høydepunkter">
-          <div class="stat">
-            <div class="stat-num">3</div>
-            <div class="stat-label">år med studiefokus på digitale medier</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">2</div>
-            <div class="stat-label">større kundeprosjekter (IKT + bachelor)</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">Fullstack-ish</div>
-            <div class="stat-label">design + implementasjon (HTML/CSS/JS)</div>
-          </div>
-
-          <div class="mini">
-            <p class="mini-title">Hva jeg søker</p>
-            <p class="mini-text">
-              Roller innen innholdsproduksjon, SoMe, digital markedsføring, webdesign/utvikling – gjerne der jeg kan ta eierskap til struktur og kvalitet.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -103,7 +86,8 @@
           <button class="filter" data-filter="3d" role="tab" aria-selected="false">3D</button>
         </div>
 
-        <div class="grid" id="projectGrid">
+        <div class="projects-layout">
+          <div class="grid" id="projectGrid">
           <article class="card" data-tags="web brand" tabindex="0"
                    data-title="Bachelor – Jobbguru"
                    data-subtitle="Digital identitet + nettside + SEO + booking"
@@ -180,6 +164,29 @@
               <span class="pill">SoMe</span>
             </div>
           </article>
+          </div>
+
+          <aside class="hero-card projects-summary" aria-label="Høydepunkter">
+            <div class="stat">
+              <div class="stat-num">3</div>
+              <div class="stat-label">år med studiefokus på digitale medier</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">2</div>
+              <div class="stat-label">større kundeprosjekter (IKT + bachelor)</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Fullstack-ish</div>
+              <div class="stat-label">design + implementasjon (HTML/CSS/JS)</div>
+            </div>
+
+            <div class="mini">
+              <p class="mini-title">Hva jeg søker</p>
+              <p class="mini-text">
+                Roller innen innholdsproduksjon, SoMe, digital markedsføring, webdesign/utvikling – gjerne der jeg kan ta eierskap til struktur og kvalitet.
+              </p>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
@@ -200,6 +207,8 @@
           <div class="video-wrapper">
             <iframe
               src="https://player.vimeo.com/video/1164964624?badge=0&autopause=0&title=0&byline=0&portrait=0"
+              title="Portrettintervju"
+              loading="lazy"
               frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture"
               allowfullscreen>
@@ -252,17 +261,20 @@
         <div class="about">
           <div class="about-card about-profile">
             <img class="profile-img profile-click"
-                src="assets/Profilbilde.jpg"
+                src="assets/optimized/profile-thumb.jpg"
                 alt="Profilbilde av Sander Vinterhus"
+                width="96"
+                height="96"
                 loading="lazy"
+                decoding="async"
                 role="button"
                 tabindex="0"
                 aria-label="Åpne profilbilde i full størrelse" />
 
             <div>
               <p>
-                Jeg er student ved Universitetet i Agder og tar en bachelor i Multimedieteknologi og design.
-                Jeg er foreløpig på siste semester og på utkikk etter jobb. Jeg liker å kombinere design og teknisk implementasjon – spesielt web, identitet og innholdsproduksjon.
+                Jeg har fullført en bachelor i Multimedieteknologi og design ved Universitetet i Agder.
+                Nå er jeg på utkikk etter jobb, og liker å kombinere design og teknisk implementasjon – spesielt web, identitet og innholdsproduksjon.
               </p>
               <p>
                 I prosjekter trives jeg med å ta eierskap til struktur og kvalitet: planlegge, produsere, teste og levere.
@@ -379,6 +391,6 @@
     <img id="lightboxImg" alt="" />
   </dialog>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

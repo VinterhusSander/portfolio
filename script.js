@@ -183,17 +183,19 @@ const galleryGrid = document.getElementById("galleryGrid");
 
 if (galleryGrid) {
   galleryFiles.forEach((file) => {
+    const thumbSrc = `assets/optimized/thumb-${file}`;
+    const fullSrc = `assets/optimized/full-${file}`;
     const item = document.createElement("button");
     item.type = "button";
     item.className = "gallery-item";
     item.setAttribute("aria-label", `Åpne bilde ${file}`);
 
     item.innerHTML = `
-      <img src="assets/${file}" alt="" loading="lazy" />
+      <img src="${thumbSrc}" alt="" width="900" height="600" loading="lazy" decoding="async" />
       <div class="gallery-cap">${file}</div>
     `;
 
-    item.addEventListener("click", () => openLightbox(`assets/${file}`));
+    item.addEventListener("click", () => openLightbox(fullSrc));
     galleryGrid.appendChild(item);
   });
 }
@@ -233,7 +235,7 @@ const profileImg = document.querySelector(".profile-click");
 
 if (profileImg) {
   const openProfile = () => {
-    openLightbox("assets/Profilbilde.jpg");
+    openLightbox("assets/optimized/profile-full.jpg");
   };
 
   profileImg.addEventListener("click", openProfile);
